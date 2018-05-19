@@ -1,0 +1,100 @@
+/* You can add global styles to this file, and also import other style files */
+body{ background: url(../images/bg.jpg) repeat left top; font-family: "Open Sans"}
+main{ background: url(../images/header_bg.png) no-repeat left top;min-height: 10px; height: 93vh}
+.logo{margin: 15px auto; max-width: 300px; padding-bottom: 15px;}
+.white-bg{background: #fff; padding-top: 25px; padding-bottom: 25px;}
+.login-screen{ margin: 70px 0 200px;}
+.login-btn{ border-radius: 100%; width:100px; height: 100px; color: #fff; background: #d8010e; border: none; font-size: 30px; }
+
+.home-text{font: normal 45px/40px "Open Sans"; text-transform: uppercase; color: #d8010e; }
+.home-text span{font: normal 34px "Open Sans"; color: #3a3736;padding-bottom: 5px; display: block;}
+
+h2{ color: #d8010e; border-bottom: 1px #ccc solid; display: block; padding-bottom: 15px; margin-bottom:25px;}
+
+/*Login*/
+.login-bg{ margin: 70px 0;}
+textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+.login-form{max-width: 320px;}
+.blocking-span{ position: relative; width: 100%;}
+input:focus ~ .floating-label,
+/*input:not(:focus):valid ~ .floating-label{
+  top: -10px;
+  left: 0px;
+  font-size: 11px;
+  opacity: 1;
+    border: none;
+    outline: none; margin-bottom:25px;
+    color: #d8010e;    
+}*/
+input:not([value=""]):not(:focus):valid ~ .floating-label{
+  top: -10px;
+    left: 0;
+  font-size: 11px;
+  opacity: 1;
+    border: none;
+    outline: none;
+    color: #d8010e;    
+}
+.inputText {
+  font-size: 18px;
+    width: 100%;
+  height: 35px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px #e2dede solid;
+}
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  top: 5px;
+    left: 0;
+  transition: 0.2s ease all;
+}
+.register-form .floating-label{ left: 0;}
+input:focus{
+    -webkit-transition : border 1000ms linear;
+  -moz-transition : border 1000ms linear;
+  -o-transition : border 1000ms linear;
+  transition : border 1000ms linear;
+    border-color:#d8010e;
+}
+
+.signup-txt{font-size: 11px; margin-top: 10px; display: block;}
+.signup-txt a{color: #d8010e;}
+.signup-txt button{ background: none; border: none; font-size: 35px;color: #d8010e}
+.btn-next,.btn-next:focus{ color: #fff; background: #d8010e; border: none; font-size: 18px;  padding: 8px 18px 8px 18px;}
+.btn-next:hover{ color: #d8010e; background: #e2dede ;}
+
+.valid-ico{ display: inline;position: absolute; top: 8px; right: 0;}
+
+.txt-danger{color:red;}
+a.txt-danger:hover{ text-decoration: none; color: #333;}
+.txt-success{color:green;}
+
+.help-block{ margin-top: -10px;}
+
+/*Login*/
+
+
+footer{background: #d8010e; padding: 15px; color: #fff; text-align: center; /*position: fixed; bottom: 0;*/ width: 100%; }
+
+
+/*Responsive*/
+@media only screen and (min-width: 768px)  {
+    .logo{margin: 50px 0px 0px 150px;}
+}
+
+@media only screen and (max-width: 767px)  {
+    .login-form{width: 100%; margin: auto;}
+    .logo{margin: 50px 0px 0px 150px;}
+    .logo img{max-width: 100%;}
+    .home-text{text-align: center;font-size: 2.6rem;}
+    .home-text span{font-size: 2rem;}
+}
+
